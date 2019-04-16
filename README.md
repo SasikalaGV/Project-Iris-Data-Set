@@ -12,3 +12,5 @@ Programming and Scripting at GMIT
 1. Go to GitHub
 2. Click the 'Clone or Download' button
 3. Click on Download as Zip
+
+## Introduction
