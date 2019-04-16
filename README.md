@@ -15,3 +15,4 @@ Programming and Scripting at GMIT
 
 ## Introduction
 
+In this project I have taken Iris Flower Data set to do the basic research for Data Analysis. 
