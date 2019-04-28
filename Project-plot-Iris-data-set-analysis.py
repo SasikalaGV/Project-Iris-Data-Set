@@ -16,9 +16,9 @@
 # 3. petal length in cm 
 # 4. petal width in cm 
 # 5. Species: 
-# -- Iris Setosa 
-# -- Iris Versicolour 
-# -- Iris Virginica
+# -- Setosa 
+# -- Versicolour 
+# -- Virginica
 # 
 
 # In[1]:
@@ -28,7 +28,7 @@ from IPython.display import Image
 Image(filename="attachments\Iris.png", width=600, height=600)
 
 
-# Importing the libaries for this project: Pandas, Numpy, Holoviews.
+# Importing the libaries for this project: Pandas, Numpy.
 # 
 # Pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools.
 # 
@@ -45,9 +45,9 @@ Image(filename="attachments\Iris.png", width=600, height=600)
 
 import pandas as pd
 import numpy as np
-#import holoviews as hv
+
 import seaborn as sns
-#hv.extension('bokeh', 'matplotlib')
+
 
 
 # # Data
@@ -394,7 +394,6 @@ plt.show()
 # 
 # Machine Learning in Python. This is a tutorial I found online. 
 # 
-# The iris data set already exisits in sklearn so I'm going to reuse it.
 
 # In[26]:
 
