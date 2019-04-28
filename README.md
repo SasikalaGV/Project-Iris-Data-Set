@@ -227,12 +227,6 @@ Out:
 ![Iris_Describe](/attachments/PQ1.png)
 
 
-![Iris_Describe](/attachments/PQ2.png)
-
-
-![Iris_Describe](/attachments/PQ3.png)
-
-
 ![Iris_Describe](/attachments/PQ4.png)
 
 
@@ -304,3 +298,58 @@ Machine learning, as a powerful approach to achieve Artificial Intelligence, has
 
 ![Iris_Describe](/attachments/ML2.png)
 
+
+
+# # References
+
+Background info
+https://en.wikipedia.org/wiki/Iris_flower_data_set
+ 
+https://ifcs.boku.ac.at/repository/data/iris/index.html
+ 
+Read and access data from the csv file using Panda
+https://pythonspot.com/pandas-read-csv/
+ 
+Computations / Descriptive Stats of DataFrame
+https://pandas.pydata.org/pandas-docs/stable/reference/frame.html
+ 
+Summary Statistics
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html
+ 
+Plotting quantities
+https://cogmaster-stats.github.io/python-cogstats/auto_examples/plot_pandas.html
+
+Seaborn Boxplot
+https://seaborn.pydata.org/generated/seaborn.boxplot.html
+ 
+https://www.datacamp.com/community/tutorials/seaborn-python-tutorial#show
+ 
+https://tacaswell.github.io/matplotlib/examples/statistics/boxplot_color_demo.html
+ 
+matlablib
+https://matplotlib.org/gallery/index.html
+ 
+Machine learning
+https://www.kaggle.com/jchen2186/machine-learning-with-iris-dataset
+ 
+ 
+Statistics in Python
+http://www.scipy-lectures.org/packages/statistics/index.html#statistics
+ 
+numpy tutorial
+https://www.dataquest.io/blog/numpy-tutorial-python/
+ 
+Docs
+https://pandas.pydata.org/pandas-docs
+ 
+Machine Learning Tutorial
+http://scikit-learn.org/stable/tutorial/basic/tutorial.html
+ 
+https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html
+ 
+https://theseus.fi/bitstream/handle/10024/64785/yang_yu.pdf?sequence=1
+ 
+https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
+ 
+http://seaborn.pydata.org/examples/scatterplot_categorical.html
+ 
