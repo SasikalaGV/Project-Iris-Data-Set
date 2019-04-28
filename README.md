@@ -17,6 +17,9 @@ Programming and Scripting at GMIT
 
 In this project I have taken Iris Flower Data set to do the basic research for Data Analysis. 
 
+## Dataset
+A dataset is an accumulation of data. Most usually a dataset compares to the contents of a single database table, or a single statistical data matrix, where each column of the table represents a specific variable, and each row relates to a given member of the data set in question. The dataset records esteems for every one of the variables, for example, height and weight of an object,for every individual from the data set. Each value is known as a datum. They can be analysed through queries based on different criteria, or dimensions.
+
 ## Fisher's Iris Data
 # 
 The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher in his 1936 paper "The use of multiple measurements in taxonomic problems" as an example of linear discriminant analysis.
@@ -245,14 +248,59 @@ By using the boxplot I have included the comparisions for the following items fr
 - Petal Width 
 
 Out:
+Compare the Sepal Length for the Species
 
 ![Iris_Describe](/attachments/compSPL.png)
 
+Compare the Sepal Width for the Species
 
 ![Iris_Describe](/attachments/compSPW.png)
 
+Compare the Petal Length for the Species
 
 ![Iris_Describe](/attachments/compPLL.png)
 
+Compare the Petal Width for the Species
 
 ![Iris_Describe](/attachments/compPLW.png)
+
+
+
+# Pairplot
+Looking for relationships between variables across multiple dimensions
+
+
+PairPlots
+
+![Iris_Describe](/attachments/pairplot1.png)
+
+
+![Iris_Describe](/attachments/pairplot2.png)
+
+
+![Iris_Describe](/attachments/pairplot3.png)
+
+Swarmplot
+
+![Iris_Describe](/attachments/swarmplot1.png)
+
+
+ViolinePlots
+
+![Iris_Describe](/attachments/violineplot1.png)
+
+
+![Iris_Describe](/attachments/violineplot2.png)
+
+# Plots using subplots
+
+![Iris_Describe](/attachments/subplot1.png)
+
+# Machine Learning
+Machine learning, as a powerful approach to achieve Artificial Intelligence, has been widely used in pattern recognition, Nowadays, with the development of technology, pattern recognition has become an essential and important technique in the field of Artificial Intelligence. The pattern recognition can identify letters, images, voice or other objects and also can identify status, extent or other abstractions.
+
+![Iris_Describe](/attachments/ML1.png)
+
+
+![Iris_Describe](/attachments/ML2.png)
+
