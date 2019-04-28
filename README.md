@@ -102,45 +102,81 @@ In this section, I have included few functions from Computations / Descriptive S
 Get the minimum value of all the column in the data set
 
 Iris_data.min()
+
 Out:
+
 sepal_length       4.3
+
 sepal_width          2
+
 petal_length         1
+
 petal_width        0.1
+
 species         setosa
+
 dtype: object
+
 
 Iris_data.max()
+
 Out:
+
 sepal_length          7.9
+
 sepal_width           4.4
+
 petal_length          6.9
+
 petal_width           2.5
+
 species         virginica
+
 dtype: object
 
+
 Iris_data.mean()
+
 Out:
+
 sepal_length    5.843333
+
 sepal_width     3.057333
+
 petal_length    3.758000
+
 petal_width     1.199333
+
 dtype: float64
+
 
 Iris_data.median()
+
 Out:
+
 sepal_length    5.80
+
 sepal_width     3.00
+
 petal_length    4.35
+
 petal_width     1.30
+
 dtype: float64
 
+
 Iris_data.std()
+
 Out:
+
 sepal_length    0.828066
+
 sepal_width     0.435866
+
 petal_length    1.765298
+
 petal_width     0.762238
+
 dtype: float64
 
 # Summary statistics of the Iris_data Dataframe 
@@ -151,6 +187,7 @@ DataFrame.describe: Generates descriptive statistics that summarize the central 
 Iris_data.describe(include='all')
 
 Out:
+
 ![Iris_Describe](/attachments/Iris_desc.png)
 
 # Excluding object columns from a Dataframe description
@@ -158,4 +195,64 @@ Out:
 Iris_data.describe(exclude=[np.object])
 
 Out:
+
 ![Iris_Describe](/attachments/Iris_npObject.png)
+
+
+
+# Plotting quantities from a CSV file
+Using pandas integrating plotting tool we can plot a few quantities, separately for each species Setosa, Veriscolor and Virginica.
+
+
+import pandas
+import matplotlib.pyplot as plt  
+
+species_data = Iris_data.groupby('species')
+species_data.boxplot(column=['sepal_length', 'sepal_width' , 'petal_length', 'petal_width'])
+
+from pandas.tools import plotting
+
+plotting.scatter_matrix(Iris_data[['sepal_length', 'sepal_width' , 'petal_length', 'petal_width']])
+
+plt.figure(figsize=(4,3))
+
+plt.show() 
+
+Out:
+
+
+![Iris_Describe](/attachments/PQ1.png)
+
+
+![Iris_Describe](/attachments/PQ2.png)
+
+
+![Iris_Describe](/attachments/PQ3.png)
+
+
+![Iris_Describe](/attachments/PQ4.png)
+
+
+# Seaborn Boxplot
+By using different data visualization techniques through Seaborn we can compare the data for each species. Here I have taken Boxplot to show the differences between each Sepal and Petal.
+ 
+The boxplot shows the distribution of quantitative data in a way that facilitates comparitions between variables or across levels of a categorical variable. The box shows the quartiles of the dataset while the whiskers extend to show the rest of the distribution, expect for points that are determined to be "outliers" using a method that is a function of the inter-quartile range.
+
+By using the boxplot I have included the comparisions for the following items from the Iris data set 
+- Sepal Length
+- Sepal Width
+- Petal Length
+- Petal Width 
+
+Out:
+
+![Iris_Describe](/attachments/compSPL.png)
+
+
+![Iris_Describe](/attachments/compSPW.png)
+
+
+![Iris_Describe](/attachments/compPLL.png)
+
+
+![Iris_Describe](/attachments/compPLW.png)
