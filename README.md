@@ -48,7 +48,9 @@ NumPy is the fundamental package for scientific computing with Python
 
 
 import pandas as pd
+
 import numpy as np
+
 import seaborn as sns
 
 
@@ -60,25 +62,37 @@ Iris_data = pd.read_csv('attachments/Irisdataset.csv')
 Iris_data.columns = ['sepal_length', 'sepal_width' , 'petal_length', 'petal_width', 'species']
 
 # specify the number of rows to be showen here
+
 Iris_data.head(10)
+
 Out:
+
 ![Iris_data_Head](/attachments/Iris_head.png)
 
 # Discovering the Shape of the table
 
 Iris_data.shape
+
 Out:(150, 5)
 
 # Figure out unique type of Iris flower and the size
 
 Iris_data['species'].unique()
-Out:array(['setosa', 'versicolor', 'virginica'], dtype=object)
+
+Out:
+
+array(['setosa', 'versicolor', 'virginica'], dtype=object)
 
 Iris_data['species'].value_counts()
+
 Out:
+
 virginica     50
+
 setosa        50
+
 versicolor    50
+
 Name: species, dtype: int64
 
 # Analysing the data using Min, Max, Mean, Median and Standard Deviation
@@ -137,7 +151,7 @@ DataFrame.describe: Generates descriptive statistics that summarize the central 
 Iris_data.describe(include='all')
 
 Out:
-![Iris_Describe](/attachments/Iris_Desc.png)
+![Iris_Describe](/attachments/Iris_desc.png)
 
 # Excluding object columns from a Dataframe description
 
