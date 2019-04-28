@@ -32,12 +32,12 @@ The dataset contains a set of 150 records under 5 attributes -
 3. petal length in cm 
 4. petal width in cm 
 5. Species: 
-# -- Setosa 
-# -- Versicolour 
-# -- Virginica
+    -- Setosa 
+    -- Versicolour 
+-   - Virginica
 
 
-![iris](attachments\Iris.png)
+![iris](/attachments/Iris.png)
 
 ## Libraries Used
 Importing the libaries for this project: Pandas, Numpy, Holoviews.
@@ -45,3 +45,23 @@ Importing the libaries for this project: Pandas, Numpy, Holoviews.
 Pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools.
 
 NumPy is the fundamental package for scientific computing with Python
+
+
+import pandas as pd
+import numpy as np
+import seaborn as sns
+
+
+# # Data
+Import the Irisdataset.csv using the panda library and examine first 10 rows of dataset
+
+Iris_data = pd.read_csv('attachments/Irisdataset.csv')
+
+Iris_data.columns = ['sepal_length', 'sepal_width' , 'petal_length', 'petal_width', 'species']
+
+# specify the number of rows to be showen here
+Iris_data.head(10)
+
+# Discovering the Shape of the table
+
+Iris_data.shape
