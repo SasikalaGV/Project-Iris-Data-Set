@@ -32,9 +32,9 @@ The dataset contains a set of 150 records under 5 attributes -
 3. petal length in cm 
 4. petal width in cm 
 5. Species: 
-    -- Setosa 
-    -- Versicolour 
--   - Virginica
+    - Setosa 
+    - Versicolour 
+    - Virginica
 
 
 ![iris](/attachments/Iris.png)
@@ -61,7 +61,87 @@ Iris_data.columns = ['sepal_length', 'sepal_width' , 'petal_length', 'petal_widt
 
 # specify the number of rows to be showen here
 Iris_data.head(10)
+Out:
+![Iris_data_Head](/attachments/Iris_head.png)
 
 # Discovering the Shape of the table
 
 Iris_data.shape
+Out:(150, 5)
+
+# Figure out unique type of Iris flower and the size
+
+Iris_data['species'].unique()
+Out:array(['setosa', 'versicolor', 'virginica'], dtype=object)
+
+Iris_data['species'].value_counts()
+Out:
+virginica     50
+setosa        50
+versicolor    50
+Name: species, dtype: int64
+
+# Analysing the data using Min, Max, Mean, Median and Standard Deviation
+
+In this section, I have included few functions from Computations / Descriptive Stats of DataFrame
+
+Get the minimum value of all the column in the data set
+
+Iris_data.min()
+Out:
+sepal_length       4.3
+sepal_width          2
+petal_length         1
+petal_width        0.1
+species         setosa
+dtype: object
+
+Iris_data.max()
+Out:
+sepal_length          7.9
+sepal_width           4.4
+petal_length          6.9
+petal_width           2.5
+species         virginica
+dtype: object
+
+Iris_data.mean()
+Out:
+sepal_length    5.843333
+sepal_width     3.057333
+petal_length    3.758000
+petal_width     1.199333
+dtype: float64
+
+Iris_data.median()
+Out:
+sepal_length    5.80
+sepal_width     3.00
+petal_length    4.35
+petal_width     1.30
+dtype: float64
+
+Iris_data.std()
+Out:
+sepal_length    0.828066
+sepal_width     0.435866
+petal_length    1.765298
+petal_width     0.762238
+dtype: float64
+
+# Summary statistics of the Iris_data Dataframe 
+DataFrame.describe: Generates descriptive statistics that summarize the central tendency, dispersion and shape of a dataset’s distribution, excluding NaN values.
+
+# Describing all columns of a DataFrame regardless of data type
+
+Iris_data.describe(include='all')
+
+Out:
+![Iris_Describe](/attachments/Iris_Desc.png)
+
+# Excluding object columns from a Dataframe description
+
+Iris_data.describe(exclude=[np.object])
+
+Out:
+![Iris_Describe](/attachments/Iris_npObject.png)

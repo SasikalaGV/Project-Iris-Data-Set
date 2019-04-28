@@ -23,7 +23,6 @@
 
 # In[1]:
 
-
 from IPython.display import Image
 Image(filename="attachments\Iris.png", width=600, height=600)
 
